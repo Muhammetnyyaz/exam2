@@ -1,0 +1,28 @@
+1 Arslan
+2 Serdar
+3 Merdan
+4 Kemal
+5 Göwher
+6 Ýakup
+7 Akmuhammet
+8 Muhammetnyýaz
+9 Selim
+10 Omar
+11 Eziz
+12 Döwrangeldi
+13 Artur
+14 Akmyrat
+
+1. Выложить на гитхаб в 22.07.2024 в 23:00 (Exam2)
+2. 10 commits
+3. responsive design (-20) 
+4. clean code
+5. font-weight, font-size
+6. margin, padding,
+7. slider
+8. aos
+9. bootstrap-icons
+10. (no css, just bootstrap) 
+
+extra
+fancybox.js
