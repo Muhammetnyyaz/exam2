@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/icons/bootstrap-icons.css">
     <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="library/fancybox/fancybox.css">
 </head>
 
 <body>
+    <!-- section-1 -->
+
     <div class="container-xl position-relative">
         <img src="img/01.jpeg" alt="" class=" img-fluid">
         <div class="position-absolute top-50 start-50 translate-middle text-center">
@@ -25,6 +28,8 @@
             </div>
         </div>
     </div>
+
+    <!-- section-2 -->
 
     <div class="container py-5 mt-5">
         <div class="row">
@@ -42,7 +47,7 @@
                 </div>
             </div>
 
-            <div class="col-6 col-lg-3">
+            <div class="col-6 col-lg-3" data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000">
                 <div class="bi bi-tencent-qq display-5 "></div>
                 <div class="text-secondary-emphasis h2 fw-normal my-3">
                     over 300 <br> food ptoducts
@@ -53,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="col-6 col-lg-3 px-3 my-3 my-lg-0">
+            <div class="col-6 col-lg-3 px-3 my-3 my-lg-0" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <div class="bi bi-bag-dash-fill display-5"></div>
                 <div class="text-secondary-emphasis h2 fw-normal my-3 ">
                     only natural products
@@ -64,7 +69,7 @@
                 </div>
             </div>
 
-            <div class="col-6 col-lg-2 my-3 my-lg-0">
+            <div class="col-6 col-lg-2 my-3 my-lg-0" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
                 <div class="bi bi-lungs-fill display-5"></div>
                 <div class="text-secondary-emphasis h2 fw-normal my-3 ">
                     significant weight loss
@@ -77,11 +82,15 @@
         </div>
     </div>
 
+    <!-- section-3 -->
+
     <div class="container my-5">
         <div class="row">
 
-            <div class="col-6 col-lg-3 ">
-                <img src="img/0201.jpeg" alt="" class="img-fluid">
+            <div class="col-6 col-lg-3" data-aos="fade-right">
+                <a data-fancybox="gallery" href="img/0201.jpeg">
+                    <img src="img/0201.jpeg" class="img-fluid" />
+                </a>
             </div>
 
             <div class="col-6 col-lg-3 align-content-center px-3">
@@ -94,8 +103,10 @@
                 </div>
             </div>
 
-            <div class="col-6 col-lg-3 ">
-                <img src="img/0202.jpeg" alt="" class="img-fluid">
+            <div class="col-6 col-lg-3 " data-aos="fade-right">
+                <a data-fancybox="gallery" href="img/0202.jpeg">
+                    <img src="img/0202.jpeg" class="img-fluid" />
+                </a>
             </div>
 
             <div class="col-6 col-lg-3 align-content-center px-5">
@@ -110,6 +121,7 @@
         </div>
     </div>
 
+    <!-- section-4 -->
 
     <div class="container position-relative">
         <div class="some-item" aos="fade" aos-duration="50">
@@ -136,11 +148,24 @@
         </div>
     </div>
 
-
+ <!-- end -->
 
     <script src="js/aos.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/splide.min.js"></script>
+    <script src="library/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 2500,
+            // once: true,
+        });
+        // fancybox js
+        Fancybox.bind('[data-fancybox="gallery"]', {});
+        Fancybox.bind('[data-fancybox="auf"]', {});
+        // end of fancy box
+    </script>
+
 </body>
 
 </html>
